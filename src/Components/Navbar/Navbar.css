@@ -1,0 +1,147 @@
+.logo{
+  color: #F72D57;
+  font-family: 'Praise', cursive;
+  font-size: 48px;
+  font-weight: 400;
+}
+
+.navBtn{
+  border-radius: 5px;
+  background: #F72D57;
+  border: none;
+  width: 140px;
+  height: 46px;
+  color: white;
+  font-weight: 400;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  max-width: 1500px;
+  position: relative;
+}
+
+.leftContainer{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  gap: 50px;
+}
+
+.nav-logo {
+  color: #F72D57;
+  font-size: 2rem;
+  flex-grow: 1;
+  font-family: 'Praise', cursive;
+}
+
+.navLink a {
+  text-decoration: none;
+  color: #333;
+  position: relative;
+  padding-bottom: 8px;
+  margin-left: 50px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.navLink a:hover {
+  color: #F72D57; 
+}
+
+.navLink a::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0;
+  background-color: #F72D57; 
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transition: width 0.5s ease-in-out, left 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.navLink li:hover a::after {
+  width: 100%;
+  left: 0;
+}
+
+
+.nav-logo .icon {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  margin-left: 16px;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  margin-right: 2rem;
+}
+
+.nav-item {
+  line-height: 40px;
+  margin-right: 1rem;
+}
+
+.nav-item:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0;
+  background: transparent;
+  transition: width 0.7s ease, background-color 0.5s ease;
+}
+
+.nav-icon{
+  display: none;
+}
+
+.icon{
+  font-size: 30px;
+}
+
+@media screen and (max-width: 960px) {
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: -110%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-menu.active {
+    background: #F72D57;
+    left: 0px;
+    height: 500px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .nav-icon {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-100%, -50%);
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+  }
+  .nav-container{
+    box-shadow: 0px -1px 0px 0px #EBEBEB inset;
+  }
+  .navBtn{
+  display: none;
+  }
+}

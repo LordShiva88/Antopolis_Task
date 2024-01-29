@@ -1,0 +1,44 @@
+.heading{
+  font-family: 'Praise', cursive;
+}
+.sectionContainer{
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+.btn{
+  border-radius: 5px;
+  background: #F72D57;
+  border: none;
+  width: 140px;
+  height: 46px;
+  color: white;
+  font-weight: 400;
+}
+
+.redText{
+  color: #F72D57;
+}
+.commonText{
+  color: #3F3F3F;
+}
+.headingText{
+  color: #3F3F3F;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .sectionContainer {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .sectionContainer {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
