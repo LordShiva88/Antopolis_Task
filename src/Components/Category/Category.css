@@ -1,30 +1,23 @@
+/* Card styling for category sections */
 .card {
   width: 300px;
   flex-shrink: 0;
   border-radius: 5px;
   background: #FFF;
-  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
   border: 1px solid #ccc;
   overflow: hidden;
   margin-top: 20px;
   margin-bottom: 50px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   padding: 30px;
 }
 
-.categoryHeading{
+.categoryHeading {
   margin-top: 50px;
   margin-bottom: 30px;
 }
-
-.vector {
-  position: absolute;
-  top: -50px;
-  right: 20px;
-}
-
 
 .pizza-image {
   width: 240px;
@@ -40,14 +33,25 @@ h2 {
   margin-bottom: 5px;
 }
 
+/* Styling for images within cards */
+.card img {
+  border-radius: 0.75rem;
+  width: 220px;
+  height: 150px;
+}
 
-/* 
-.vectorCard {
-  position: relative;
-  text-align: center;
-} */
+.description {
+  color: #3F3F3F;
+}
 
-.vector .vectorCard img{
+/* Vector Image Styles */
+.vector {
+  position: absolute;
+  top: -50px;
+  right: 20px;
+}
+
+.vector .vectorCard img {
   width: 40px;
 }
 
@@ -62,50 +66,39 @@ h2 {
   flex-direction: column;
 }
 
-
 .centeredContent p {
   margin-left: 5px; 
 }
 
-
-
-
+/* Style for category section Button Group */
 button {
   margin-top: 20px;
 }
 
-.activeBtn{
+.activeBtn {
   background: #F72D57;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   width: 300px;
   height: 86px;
   flex-shrink: 0;
 }
 
-.CategoryBtn{
+.CategoryBtn {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   background: #FFF;
   width: 300px;
   height: 86px;
   flex-shrink: 0;
-}
-.card img {
-  border-radius: 0.75rem;
-  width: 220px;
-  height: 150px;
-}
-.description{
-  color: #3F3F3F;
 }
 
 .btnFlex {
@@ -115,21 +108,19 @@ button {
   justify-content: space-between;
 }
 
-@media (max-width: 600px) {
+/* Media query for responsiveness */
+@media (max-width: 768px) {
   .btnFlex {
     grid-template-columns: repeat(2, 1fr); 
   }
-  .activeBtn{
+
+  .activeBtn,
+  .CategoryBtn {
     width: 176px;
-height: 56px;
-flex-shrink: 0;
+    height: 56px;
+    flex-shrink: 0;
   }
-  
-  .CategoryBtn{
-    width: 176px;
-height: 56px;
-flex-shrink: 0;
-  }
+
   .card {
     width: 100%;
   }

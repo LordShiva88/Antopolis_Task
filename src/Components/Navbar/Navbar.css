@@ -21,22 +21,14 @@
   align-items: center;
   width: 100%;
   height: 80px;
-  max-width: 1500px;
   position: relative;
 }
 
 .leftContainer{
   display: flex;
   justify-content: center;
-  justify-items: center;
+  align-items: center;
   gap: 50px;
-}
-
-.nav-logo {
-  color: #F72D57;
-  font-size: 2rem;
-  flex-grow: 1;
-  font-family: 'Praise', cursive;
 }
 
 .navLink a {
@@ -70,24 +62,10 @@
   left: 0;
 }
 
-
-.nav-logo .icon {
-  display: inline-block;
-  width: 3rem;
-  height: 3rem;
-  margin-left: 16px;
-}
-
 .nav-menu {
   display: flex;
   list-style: none;
   text-align: center;
-  margin-right: 2rem;
-}
-
-.nav-item {
-  line-height: 40px;
-  margin-right: 1rem;
 }
 
 .nav-item:after {
@@ -107,15 +85,15 @@
   font-size: 30px;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 768px) {
   .nav-menu {
     display: flex;
     flex-direction: column;
+    gap: 30px;
     width: 100%;
     position: absolute;
     top: 80px;
     left: -110%;
-    opacity: 1;
     transition: all 0.5s ease;
   }
 
@@ -123,9 +101,9 @@
     background: #F72D57;
     left: 0px;
     height: 500px;
-    opacity: 1;
     transition: all 0.5s ease;
     z-index: 1;
+    padding-top: 50px;
   }
 
   .nav-icon {
@@ -138,10 +116,20 @@
     height: 2rem;
     cursor: pointer;
   }
+
   .nav-container{
     box-shadow: 0px -1px 0px 0px #EBEBEB inset;
   }
   .navBtn{
   display: none;
+  }
+
+  .navLink a:hover {
+    color: white; 
+  }
+  
+  .navLink a::after {
+    background-color: white; 
+    position: absolute;
   }
 }

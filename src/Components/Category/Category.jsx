@@ -4,17 +4,16 @@ import "swiper/css/pagination";
 import "./Category.css";
 import { Pagination, Autoplay } from "swiper/modules";
 import Container from "../Container/Container";
-
 import pizza1 from "../../assets/pizza-1.png";
 import pizza2 from "../../assets/pizza-2.png";
 import pizza3 from "../../assets/pizza-3.png";
 import pizza4 from "../../assets/pizza-4.png";
 import vector from "../../assets/Vector 616.svg";
 import BtnGroup from "./BtnGroup";
-
 import { FaStar } from "react-icons/fa6";
 
 const Category = () => {
+  // This data from the card
   const cards = [
     {
       id: 1,
@@ -87,7 +86,7 @@ const Category = () => {
             <div>
               <div className="card">
                 <figure>
-                  <img src={card.image} alt="Shoes" className="rounded-xl" />
+                  <img src={card.image} alt="Pizza Items Image" />
                 </figure>
                 <div className="card-body items-center text-center">
                   <h2 className="card-title">{card.title}</h2>
@@ -98,6 +97,7 @@ const Category = () => {
                   </div>
                 </div>
 
+                {/* Vector Image for absolute position in card */}
                 <div className="vector">
                   <div className="vectorCard">
                     <img src={vector} alt="" />

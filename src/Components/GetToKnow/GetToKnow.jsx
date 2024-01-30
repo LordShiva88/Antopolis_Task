@@ -6,12 +6,12 @@ import "./GetToKnow.css";
 const GetToKnow = () => {
   return (
     <Container>
-      <div className="main-container">
+      <div className="mainContainer">
         <h2 className="getToHeading headingText">
           Get to know <span className="redText">us</span>
         </h2>
-        <div className="get-to-know-container">
-          <div className="grid-item">
+        <div className="getToKnowContainer">
+          <div className="gridItem">
             <div className="imgBox">
               <img src={img1} alt="" />
             </div>
@@ -28,7 +28,7 @@ const GetToKnow = () => {
               </p>
             </div>
           </div>
-          <div className="grid-item">
+          <div className="gridItem">
             <div className="imgBox">
               <img src={img2} alt="" />
             </div>

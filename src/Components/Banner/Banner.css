@@ -1,4 +1,4 @@
-.banner{
+.banner {
   display: flex;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -7,26 +7,35 @@
   align-items: center;
 }
 
-.imgContainer{
+.imgContainer {
   position: relative;
 }
 
-.bannerImg2{
+/* Absolute positioning for bannerImg2 within imgContainer */
+.bannerImg2 {
   position: absolute;
   top: 30px;
   right: 20px;
 }
 
+.bannerHeading {
+  text-align: left;
+}
+
+/* Responsive styling for smaller screens */
 @media (max-width: 768px) {
-  .banner{
+  .banner {
     display: inline;
     padding: 20px;
   }
-  .bannerImg2{
+
+  .bannerImg2 {
     position: absolute;
     top: 50px;
   }
-  .imgContainer .bannerImg2 img, .bannerImg1 img{
+
+  .imgContainer .bannerImg2 img,
+  .bannerImg1 img {
     width: 100%;
   }
 }

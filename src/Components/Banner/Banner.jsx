@@ -8,7 +8,7 @@ const Banner = () => {
     <Container>
       <div className="banner">
         <div className="leftSideBanner">
-          <h1 className="headingText">
+          <h1 className="headingText bannerHeading">
             Experience Food <span className="redText">Delivery</span> Like Never
             Before
           </h1>
