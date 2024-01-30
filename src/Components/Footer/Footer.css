@@ -1,52 +1,95 @@
-.footerContainer{
+.logo-container {
+  /* Add your styles for the logo container if needed */
+}
+
+/* .footerContainer {
   background-color: #f72d57;
 }
 
 .footer {
-  padding: 20px;
-  color: #fff;
-}
-
-.footer-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); 
   justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  color: white;
+  padding: 50px;
 }
 
-.logo-container img {
-  max-width: 100%;
-  height: auto;
+.socialIcon {
+  font-size: 30px;
+  display: flex;
+  gap: 20px;
 }
 
-.links-container {
-  flex: 1;
-  margin-top: 10px;
-}
-
-.footer-links {
+.footer ul {
   list-style: none;
   padding: 0;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
-.footer-links div {
-  margin-right: 20px;
+.footer li {
+  margin-bottom: 10px;
 }
 
-.footer-links li {
-  margin: 5px;
-}
-
-.footer-links a {
+.footer a {
+  color: white;
   text-decoration: none;
-  color: #fff;
-  font-size: 14px;
 }
 
-.footer-links a:hover {
-  text-decoration: underline;
+@media (max-width: 576px) {
+  .footer {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+  .footer:nth-child(even) {
+    
+  }
+  
+} */
+
+.footerContainer {
+  background-color: #f72d57;
+  color: white;
+  padding: 50px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.socialIcon {
+  font-size: 30px;
+  display: flex;
+  gap: 20px;
+
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer li {
+  margin-bottom: 10px;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .logo-container {
+    grid-column: span 5;
+    text-align: center;
+  }
+  ul {
+    grid-column: span 2;
+  } 
+  .socialIcon {
+  justify-content: center;
+  }
 }

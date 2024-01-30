@@ -9,9 +9,10 @@ import pizza1 from "../../assets/pizza-1.png";
 import pizza2 from "../../assets/pizza-2.png";
 import pizza3 from "../../assets/pizza-3.png";
 import pizza4 from "../../assets/pizza-4.png";
-import star from "../../assets/Star 6.svg";
 import vector from "../../assets/Vector 616.svg";
 import BtnGroup from "./BtnGroup";
+
+import { FaStar } from "react-icons/fa6";
 
 const Category = () => {
   const cards = [
@@ -61,17 +62,11 @@ const Category = () => {
 
   return (
     <Container>
-      <h1 className="headingText">
+      <h1 className="headingText categoryHeading">
         Our Popular <span className="redText">Categories</span>
       </h1>
       <BtnGroup />
       <Swiper
-        autoplay={{
-          delay: 2000,
-          disableOnInteraction: false,
-        }}
-        speed={5000}
-        loop={true}
         pagination={{
           clickable: true,
         }}
@@ -96,9 +91,20 @@ const Category = () => {
                 </figure>
                 <div className="card-body items-center text-center">
                   <h2 className="card-title">{card.title}</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <p className="description">{card.description}</p>
+                  <p>{card.price}</p>
                   <div className="card-actions">
-                    <button className="btn btn-primary">Buy Now</button>
+                    <button className="btn btn-primary">Add to cart</button>
+                  </div>
+                </div>
+
+                <div className="vector">
+                  <div className="vectorCard">
+                    <img src={vector} alt="" />
+                    <div className="centeredContent">
+                      <FaStar />
+                      <p>5</p>
+                    </div>
                   </div>
                 </div>
               </div>

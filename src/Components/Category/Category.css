@@ -14,28 +14,17 @@
   padding: 30px;
 }
 
+.categoryHeading{
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
 .vector {
   position: absolute;
-  top: 0;
-  right: 10px;
-  text-align: center;
+  top: -50px;
+  right: 20px;
 }
 
-.vector-image {
-  width: 50px;
-  height: 50px;
-}
-
-.star-icon {
-  width: 20px;
-  height: 20px;
-  margin-top: 5px;
-}
-
-.rating {
-  font-size: 1rem;
-  color: #333;
-}
 
 .pizza-image {
   width: 240px;
@@ -51,15 +40,38 @@ h2 {
   margin-bottom: 5px;
 }
 
+
+/* 
+.vectorCard {
+  position: relative;
+  text-align: center;
+} */
+
+.vector .vectorCard img{
+  width: 40px;
+}
+
+.centeredContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.centeredContent p {
+  margin-left: 5px; 
+}
+
+
+
+
 button {
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  padding: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .activeBtn{
@@ -92,7 +104,9 @@ button {
   width: 220px;
   height: 150px;
 }
-
+.description{
+  color: #3F3F3F;
+}
 
 .btnFlex {
   display: grid;
@@ -115,5 +129,8 @@ flex-shrink: 0;
     width: 176px;
 height: 56px;
 flex-shrink: 0;
+  }
+  .card {
+    width: 100%;
   }
 }
