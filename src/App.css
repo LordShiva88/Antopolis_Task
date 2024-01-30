@@ -1,10 +1,11 @@
 .heading{
   font-family: 'Praise', cursive;
 }
-.sectionContainer{
-  padding-right: 100px;
-  padding-left: 100px;
-}
+
+/* .sectionContainer{
+  width: 1440px;
+  margin: auto;
+} */
 
 .btn{
   border-radius: 5px;
@@ -19,9 +20,11 @@
 .redText{
   color: #F72D57;
 }
+
 .commonText{
   color: #3F3F3F;
 }
+
 .headingText{
   color: #3F3F3F;
   font-size: 48px;
@@ -37,8 +40,13 @@
 }
 
 @media (max-width: 576px) {
-  .sectionContainer {
+  /* .sectionContainer {
     padding-right: 10px;
     padding-left: 10px;
+    width: 100%;
+  } */
+  .headingText{
+    font-size: 35px;
+    font-weight: 700;
   }
 }

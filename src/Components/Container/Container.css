@@ -1,0 +1,9 @@
+.sectionContainer{
+  width: 1440px;
+  margin: auto;
+}
+
+@media (min-width: 600px) {
+  .sectionContainer {
+    max-width: 600px; 
+}
